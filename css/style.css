@@ -172,6 +172,7 @@ main {
 .music-is-life-heading {
   width: 65.3333%;
   margin: 0 auto;
+  position: relative;
 }
 .music-is-life-heading h1 {
   font-family: 'Montserrat', sans-serif;
@@ -432,4 +433,32 @@ main {
   width: 40%;
   display: table-cell;
   vertical-align: middle;
+}
+
+
+/* Live Dates Page
+********************************/
+.live-dates-container {
+  background: url("../images/live_date_slide.jpg");
+}
+.live-dates-row {
+  max-width: 1250px;
+  min-height: 483px;
+  width: 100%;
+  position: relative;
+}
+.col-6 {
+  position: relative;
+  width: 48% !important;
+}
+.col-6 .img {
+  background-image: url("../images/about-gallery2.jpg");
+  background-position: left top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
