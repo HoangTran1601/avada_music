@@ -1,3 +1,435 @@
 /* This is the style of the page
     Author: HoangTran
 */
+
+/* GLOBAL
+*******************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  font-size: 16px;
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+}
+.full-width {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+.row {
+  padding: 0 30px;
+}
+/* wrapper
+******************/
+.wrapper {
+  /*color: rgb(255,255,255);*/
+  color: #fff;
+  height: 100%;
+  position: relative;
+}
+
+/* header
+*******************/
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+/* logo */
+.logo {
+  position: relative;
+  z-index: 9999;
+  margin: 31px 0px;
+  padding: 0 12px;
+  display: inline-block;
+}
+
+/* slider
+*******************/
+.slider-container {
+  background: url("../images/home_slider.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 662px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+/* slider content */
+.slider-content {
+  padding: 0 30px;
+  position: fixed;
+  top: 30%;
+  z-index: 1;
+  width: 100%;
+}
+.content {
+  text-align: center;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+.heading-wrapper {
+  display: block;
+}
+.heading h1{
+  display: inline-block;
+  font-size: 150px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+}
+.caption-wrapper {
+  display: block;
+}
+.caption {
+  display: inline-block;
+  font-size: 24px;
+  font-weight: 300;
+  font-family: 'Merriweather', serif !important;
+  font-style: italic;
+  line-height: 38px;
+}
+.button {
+  text-align: center;
+  margin-top: 35px;
+}
+.button a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.button-1 {
+  display: inline-block;
+  margin: 0 7.5px;
+  background: #ec4858;
+  border-radius: 2px;
+}
+.button-1 a {
+  display: inline-block;
+  padding: 17px 40px;
+}
+.button-1:hover a{
+  background: #fff;
+  color: #000;
+}
+.button-2 {
+  display: inline-block;
+  margin: 0 7.5px;
+  border: 1px #fff solid;
+  position: relative;
+  z-index: -1;
+}
+.button-2:hover a{
+  background: #fff;
+  color: #000;
+}
+.button-2 a {
+  display: inline-block;
+  padding: 17px 40px
+}
+
+/* main
+******************/
+main {
+  padding: 0 30px;
+  position: relative;
+  z-index: 10;
+}
+.wrapper-music-is-life {
+  background-color: #323844;
+}
+.padding-bottom {
+  padding-bottom: 90px;
+}
+.content {
+  text-align: center;
+}
+.wrapper-red-line {
+  padding-bottom: 65px;
+}
+.red-line{
+  border: 1px solid black;
+  max-width: 40%;
+  border-top-width: 16px;
+  border-color: #ec4858;
+  margin: 0 auto;
+}
+.music-is-life-heading {
+  width: 65.3333%;
+  margin: 0 auto;
+}
+.music-is-life-heading h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.line {
+  border: 1px solid black;
+  border-color: #444e63;
+  border-top-width: 2px;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.music-is-life-heading p {
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #7d7b8d;
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+.wrapper-music-info {
+  text-align: center;
+}
+.wrapper-music-info:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.col {
+  width: calc(33.33% - ( ( 0px + 0px ) * 0.3333 ) );
+  float: left;
+  position: relative;
+}
+.music-info-title h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+  padding: 55% 0px 50% 0px;
+  position: relative;
+  z-index: 2;
+  pointer-events: none;
+}
+.bg-img {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+.live-dates-img {
+  background-image: url("../images/home_section_middle-1.jpg");
+}
+.meet-band-img {
+  background-image: url("../images/home-section1-1.jpg");
+}
+.new-album-img {
+  background-image: url("../images/home-section1-3.jpg");
+}
+.padding-wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.separator {
+  margin-top: 70px;
+  height: 1px;
+}
+.test {
+  height: 400px;
+  background-color: red;
+}
+/* article
+*********************/
+.margin-left-right {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.article-content {
+  position: relative;
+}
+.technology-and-music {
+  padding: 15px;
+  width: 66.66%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.tech-img {
+  background-image: url("../images/blog_music_techo-1200x600.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: calc((100% + 24px) * 0.4 - 15px);
+}
+.view-all-news {
+  padding: 70px 0;
+  text-align: center;
+  background-color: #ec4858;
+}
+.view-all-news a {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400px;
+  line-height: 21px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.meaning-word {
+  padding: 12% 30px 10% 30px;
+  position: relative;
+  text-align: center;
+}
+.word {
+  width: 65.33%;
+  margin: 0 auto;
+}
+.bg-word {
+  background-image: url("../images/home-testimonial-parallax.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.word {
+  font-family: 'Merriweather', serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 2px;
+  font-style: italic;
+  position: relative;
+  z-index: 2;
+}
+.play-button {
+  margin-bottom: 20px;
+}
+.separate {
+  height: 1px;
+  margin-top: 20px;
+}
+
+.padding-wrapper-live-dates {
+  padding-top: 100px;
+  padding-bottom: 120px;
+  background-color: #252a33;
+}
+.accordian {
+  text-align: left;
+}
+.accordian-item {
+  margin-bottom: 10px;
+  background-color: #323844;
+}
+.accordian-item a {
+  padding: 13px 12px;
+  display: block;
+}
+.icon {
+  display: inline-block;
+}
+.time-and-place {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 2px;
+}
+.accordian-item i:before{
+  font-family: IcoMoon;
+  content: "\e61d";
+  font-style: normal;
+  line-height: 22px;
+  font-size: 13px;
+}
+
+/* footer
+*************************/
+.footer {
+  position: relative;
+  z-index: 10;
+}
+.footer-1 {
+  background-color: #323844;
+  padding: 80px 30px 60px 30px;
+}
+.footer-row {
+  padding-left: 2%;
+  padding-right: 2%;
+  width: 100%;
+}
+.logo-footer {
+  display: inline-block;
+  width: 50%;
+}
+.nav-footer {
+  box-sizing: border-box;
+  width: 50%;
+  /*display: inline-block;*/
+  float: right;
+  text-align: right;
+}
+.nav-footer nav {
+  margin-top: 15px;
+}
+.nav-footer ul {
+
+  list-style: none;
+  display: inline-block;
+  color: rgba(255,255,255,.35);
+}
+.nav-footer ul li {
+  display: inline-block;
+  margin-left: 18px;
+}
+.nav-footer a {
+  color: rgba(255,255,255,.35);
+  font-size: 14px;
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+}
+.footer-2 {
+  padding: 30px;
+  background-color: #252a33;
+  display: table;
+}
+.footer-2-copy-right {
+  display: table-cell;
+  vertical-align: middle;
+}
+.footer-2-copy-right {
+  padding: 0 2%;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Merriweather', serif;
+  color: #7d7b8d;
+  line-height: 32px;
+}
+.footer-2-copy-right a {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Merriweather', serif;
+  color: #7d7b8d;
+}
+
+.contact {
+  width: 40%;
+  display: table-cell;
+  vertical-align: middle;
+}
