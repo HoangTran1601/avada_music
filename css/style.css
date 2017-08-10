@@ -261,6 +261,8 @@ main {
   grid-gap: 30px;
   max-width: 1250px;
   margin: 0 auto;
+  -ms-grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-auto-rows:minmax(200px, auto);
 }
 .grid > div{
     background: blue;
